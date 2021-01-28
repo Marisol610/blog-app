@@ -3,8 +3,8 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
-
 from .models import Post 
+
 
 class BlogTests(TestCase):
     def setUp(self):
@@ -61,7 +61,7 @@ class BlogTests(TestCase):
         })
         self.assertEqual(response.status_code, 302)
         self.assertEqual(Post.objects.last().title, "New Title")
-        self.assertContains(Post.objects.last().body, "New text")
+        self.assertEqual(Post.objects.last().body, "New text")
         
     def test_post_update_view(self):
         response = self.client.post(reverse("post_edit", args="1"),{
