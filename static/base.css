@@ -1,10 +1,10 @@
 header h1 a {
-    color: red;
+    color: rgb(70, 5, 70);
 }
 
 body {
-    background-color: thistle;
-    font-family: 'Dancing Script', cursive;
+    background: url(../static/ocean.jpg) 0 0 no-repeat;
+    font-family: cursive;
 }
 
 header {
@@ -12,11 +12,6 @@ header {
     margin-bottom: 2rem;
     display: flex;
 
-}
-
-header h1 a {
-    color: rgb(218, 18, 218);
-    text-decoration: none;
 }
 
 .nav-left {
@@ -40,18 +35,18 @@ header h1 a {
 
 .post-entry h2 a,
 .post-entry h2 a:visited {
-    background-color: violet;
-    color: rgb(21, 255, 0);
-    margin-left: 35px;
+    background-color: rgb(130, 150, 238);
+    color: rgb(32, 248, 12);
+    display: center;
     text-decoration: none;
 }
 
 .post-entry p {
-
+    font-size: 10px;
     margin-left: 35px;
     font-weight: 400;
 }
 
 .post-entry h2 a :hover {
-    color: purple;
+    color: rgb(0, 66, 128);
 }

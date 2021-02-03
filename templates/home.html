@@ -4,15 +4,15 @@
 {% for post in object_list %}
 <html>
 
-<body>
-    <img class="imgbg" src={{ url_for("static", filename="ocean.jpg") >
-    </body>
+
+
 </html>
 
 <div class="post-entry">
     <h2><a href="{% url 'post_detail' post.pk %}"> }} {{ post.title }}</a></h2>
     <p> {{ post.body }}</p>
 
-    </div>
-    {% endfor %}
-    {% endblock content %}
+</div>
+
+{% endfor %}
+{% endblock content %}

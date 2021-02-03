@@ -1,9 +1,9 @@
 header h1 a {
-    color: rgb(70, 5, 70);
+    color: rgb(121, 79, 121);
 }
 
 body {
-    background: url(../img/ocean.jpg) 0 0 no-repeat;
+    background: url(../static/ocean.jpg) 0 0 no-repeat;
     font-family: cursive;
 }
 
