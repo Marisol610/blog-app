@@ -1,17 +1,13 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-{% for post in object_list %}
-<html>
 
-
-
-</html>
-
+{%for post in object_list %}
 <div class="post-entry">
-    <h2 class="title"><a href="{% url 'post_detail' post.pk %}"> {{ post.title }}</a></h2>
-    <p> {{ post.body }}</p>
-
+    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+    <p>{{ post.body }}</p>
 </div>
 
 {% endfor %}
